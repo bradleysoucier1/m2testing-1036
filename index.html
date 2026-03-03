@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Material 2 Testing Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top-app-bar">
+      <div class="top-app-bar__title">Material 2 Testbed</div>
+      <button class="icon-btn" aria-label="Notifications">🔔</button>
+    </header>
+
+    <main class="container">
+      <section class="card hero">
+        <h1>Google Material 2 Testing Site</h1>
+        <p>
+          This page provides common Material 2-inspired components for UI and visual
+          regression testing.
+        </p>
+        <div class="actions">
+          <button class="btn btn--raised">Primary Action</button>
+          <button class="btn btn--outlined">Secondary</button>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2>Inputs</h2>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" placeholder="name@example.com" />
+          </label>
+          <label class="field">
+            <span>Message</span>
+            <textarea rows="3" placeholder="Type your message"></textarea>
+          </label>
+        </article>
+
+        <article class="card">
+          <h2>Selection</h2>
+          <label class="check">
+            <input type="checkbox" checked />
+            <span>Enable test mode</span>
+          </label>
+          <label class="check">
+            <input type="radio" name="theme" checked />
+            <span>Light</span>
+          </label>
+          <label class="check">
+            <input type="radio" name="theme" />
+            <span>Dark</span>
+          </label>
+          <label class="field">
+            <span>Volume</span>
+            <input type="range" min="0" max="100" value="60" />
+          </label>
+        </article>
+      </section>
+
+      <section class="card">
+        <h2>Elevation Steps</h2>
+        <div class="elevations">
+          <div class="elev e1">1dp</div>
+          <div class="elev e4">4dp</div>
+          <div class="elev e8">8dp</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
